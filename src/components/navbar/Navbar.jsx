@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./navbar.scss"
+import { Link } from "react-router-dom";
 
 function Navbar(){
 
@@ -12,8 +13,8 @@ function Navbar(){
                     <img src="logo.png" alt=""></img>
                     <span>RentNest</span>
                 </a>
-                <a href="">Home</a>
-                <a href="">About</a>
+                <Link to="">Home</Link>
+                <Link to="/about">About</Link>
                 <a href="">Contact</a>
                 <a href="">Agents</a>
             </div>
@@ -24,8 +25,8 @@ function Navbar(){
                     <img src="/menu.png" alt="" />
                 </div>
                 <div className={open ? "menu active" : "menu"}>
-                    <a href="">Home</a>
-                    <a href="">About</a>
+                    <Link to="/">Home</Link>
+                    <Link to="/about">About</Link>
                     <a href="">Contact</a>
                     <a href="">Agents</a>
                     <a href="">Sign in</a>
