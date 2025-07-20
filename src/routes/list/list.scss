@@ -1,0 +1,26 @@
+.list{
+    display: flex;
+    height: 100%;
+    min-height: 0;
+    
+    .listContainer{
+        flex: 3;
+        min-height: 0;
+        
+        .wrapper{
+            height: 100%;
+            padding-right: 50px;
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+            overflow-y: scroll;
+        }
+    }
+
+    .mapContainer{
+        flex: 2;
+        background-color: #fcf5f3;
+        height: 100%;
+        min-height: 0;
+    }
+}

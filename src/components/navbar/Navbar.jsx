@@ -9,28 +9,28 @@ function Navbar(){
     return(
         <nav>
             <div className="left">
-                <a className="logo" href="/">
+                <Link className="logo" to="/">
                     <img src="logo.png" alt=""></img>
                     <span>RentNest</span>
-                </a>
+                </Link>
                 <Link to="">Home</Link>
                 <Link to="/about">About</Link>
-                <a href="">Contact</a>
-                <a href="">Agents</a>
+                <Link to="">Contact</Link>
+                <Link to="">Agents</Link>
             </div>
             <div className="right">
-                <a href="">Sign in</a>
-                <a className="register" href="">Sign up</a>
+                <Link to="">Sign in</Link>
+                <Link className="register" to="">Sign up</Link>
                 <div className="menuIcon" onClick={() => setOpen((prev) => !prev)}>
                     <img src="/menu.png" alt="" />
                 </div>
                 <div className={open ? "menu active" : "menu"}>
                     <Link to="/">Home</Link>
                     <Link to="/about">About</Link>
-                    <a href="">Contact</a>
-                    <a href="">Agents</a>
-                    <a href="">Sign in</a>
-                    <a href="">Sign up</a>
+                    <Link to="">Contact</Link>
+                    <Link to="">Agents</Link>
+                    <Link to="">Sign in</Link>
+                    <Link to="">Sign up</Link>
                 </div>
             </div>
         </nav>
